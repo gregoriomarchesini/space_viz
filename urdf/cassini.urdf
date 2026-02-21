@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="spacecraft">
+
+  <!-- Base link -->
+  <link name="base_link">
+
+    <!-- Visual representation -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://space_viz/meshes/spacecraft/cassini.glb"
+              scale="1 1 1"/>
+      </geometry>
+    </visual>
+
+    <!-- Optional collision -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://space_viz/meshes/spacecraft/cassini.glb"
+              scale="1 1 1"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+</robot>

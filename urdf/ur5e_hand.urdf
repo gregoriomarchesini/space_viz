@@ -119,7 +119,7 @@
     <visual>
       <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/base.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/base.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -128,7 +128,7 @@
     <collision>
       <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/base.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/base.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -141,7 +141,7 @@
     <visual>
       <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/shoulder.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/shoulder.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -150,7 +150,7 @@
     <collision>
       <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/shoulder.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/shoulder.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -163,7 +163,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0.138"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/upperarm.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/upperarm.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -172,7 +172,7 @@
     <collision>
       <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0.138"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/upperarm.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/upperarm.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -185,7 +185,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0.007"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/forearm.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/forearm.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -194,7 +194,7 @@
     <collision>
       <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0.007"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/forearm.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/forearm.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -208,7 +208,7 @@
       <!-- TODO: Move this to a parameter -->
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 -0.127"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/wrist1.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/wrist1.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -217,7 +217,7 @@
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 -0.127"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/wrist1.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/wrist1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -230,7 +230,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.0997"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/wrist2.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/wrist2.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -239,7 +239,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0997"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/wrist2.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/wrist2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -252,7 +252,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 -0.0989"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/visual/wrist3.dae"/>
+        <mesh filename="package://space_viz/meshes/ur5e/visual/wrist3.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -261,7 +261,7 @@
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 -0.0989"/>
       <geometry>
-        <mesh filename="package://urdf_ros2_rviz2/meshes/ur5e/collision/wrist3.stl"/>
+        <mesh filename="package://space_viz/meshes/ur5e/collision/wrist3.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -380,7 +380,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/hand_base.STL" />
+          filename="package://space_viz/meshes/inspire_hand/hand_base.STL" />
       </geometry>
       <material
         name="">
@@ -394,7 +394,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/hand_base.STL" />
+          filename="package://space_viz/meshes/inspire_hand/hand_base.STL" />
       </geometry>
     </collision>
   </link>
@@ -426,7 +426,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link11.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link11.STL" />
       </geometry>
       <material
         name="">
@@ -440,7 +440,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link11.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link11.STL" />
       </geometry>
     </collision>
   </link>
@@ -479,7 +479,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link12.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link12.STL" />
       </geometry>
       <material
         name="">
@@ -493,7 +493,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link12.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link12.STL" />
       </geometry>
     </collision>
   </link>
@@ -532,7 +532,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link13.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link13.STL" />
       </geometry>
       <material
         name="">
@@ -546,7 +546,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link13.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link13.STL" />
       </geometry>
     </collision>
   </link>
@@ -585,7 +585,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link14.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link14.STL" />
       </geometry>
       <material
         name="">
@@ -599,7 +599,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link14.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link14.STL" />
       </geometry>
     </collision>
   </link>
@@ -638,7 +638,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link21.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link21.STL" />
       </geometry>
       <material
         name="">
@@ -652,7 +652,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link21.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link21.STL" />
       </geometry>
     </collision>
   </link>
@@ -691,7 +691,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link22.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link22.STL" />
       </geometry>
       <material
         name="">
@@ -705,7 +705,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link22.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link22.STL" />
       </geometry>
     </collision>
   </link>
@@ -744,7 +744,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link31.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link31.STL" />
       </geometry>
       <material
         name="">
@@ -758,7 +758,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link31.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link31.STL" />
       </geometry>
     </collision>
   </link>
@@ -797,7 +797,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link32.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link32.STL" />
       </geometry>
       <material
         name="">
@@ -811,7 +811,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link32.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link32.STL" />
       </geometry>
     </collision>
   </link>
@@ -850,7 +850,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link41.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link41.STL" />
       </geometry>
       <material
         name="">
@@ -864,7 +864,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link41.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link41.STL" />
       </geometry>
     </collision>
   </link>
@@ -903,7 +903,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link42.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link42.STL" />
       </geometry>
       <material
         name="">
@@ -917,7 +917,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link42.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link42.STL" />
       </geometry>
     </collision>
   </link>
@@ -956,7 +956,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link51.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link51.STL" />
       </geometry>
       <material
         name="">
@@ -970,7 +970,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link51.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link51.STL" />
       </geometry>
     </collision>
   </link>
@@ -1009,7 +1009,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link52.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link52.STL" />
       </geometry>
       <material
         name="">
@@ -1023,7 +1023,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf_ros2_rviz2/meshes/inspire_hand/link52.STL" />
+          filename="package://space_viz/meshes/inspire_hand/link52.STL" />
       </geometry>
     </collision>
   </link>

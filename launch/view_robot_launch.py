@@ -6,13 +6,13 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.substitutions import LaunchConfiguration, PythonExpression,PathJoinSubstitution
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('urdf_ros2_rviz2')
+    bringup_dir = get_package_share_directory('space_viz')
     launch_dir = os.path.join(bringup_dir, 'launch')
 
     # Launch configuration variables specific to simulation
@@ -41,8 +41,8 @@ def generate_launch_description():
 
     declare_urdf_cmd = DeclareLaunchArgument(
         'urdf_file',
-        default_value=os.path.join(bringup_dir, 'urdf', 'ur5e_hand.urdf'),
-        description='Whether to start RVIZ')
+        default_value='rocket.urdf',
+        description='URDF file to load  into RVIZ')
  
 
     start_robot_state_publisher_cmd = Node(
@@ -51,16 +51,9 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
-        #parameters=[{'use_sim_time': use_sim_time}],
-        arguments=[urdf_file])
+        # Correct substitution syntax:
+        arguments=[PathJoinSubstitution([bringup_dir, 'urdf', urdf_file])])
     
-    start_joint_state_publisher_cmd = Node(
-        condition=IfCondition(use_joint_state_pub),
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        output='screen',
-        arguments=[urdf_file])
     
     rviz_cmd = Node(
         condition=IfCondition(use_rviz),
@@ -69,6 +62,13 @@ def generate_launch_description():
         name='rviz2',
         arguments=['-d', rviz_config_file],
         output='screen')
+    
+    attitude_node = Node(
+        package='space_viz',
+        executable='rigid_body_attitude',
+        name='rigid_body_attitude',
+        output='screen',
+    )
         
   
     # Create the launch description and populate
@@ -78,13 +78,12 @@ def generate_launch_description():
     ld.add_action(declare_rviz_config_file_cmd)
     ld.add_action(declare_urdf_cmd)
     ld.add_action(declare_use_robot_state_pub_cmd)
-    ld.add_action(declare_use_joint_state_pub_cmd)
     ld.add_action(declare_use_rviz_cmd)
 
 
     # Add any conditioned actions
-    ld.add_action(start_joint_state_publisher_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
+    ld.add_action(attitude_node)
     ld.add_action(rviz_cmd)
 
     return ld   
